@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class SignInOneSocialButton extends StatelessWidget {
   SignInOneSocialButton(
@@ -32,10 +31,6 @@ class SignInOneSocialButton extends StatelessWidget {
             flex: 2,
             child: Text(
               text,
-              style: GoogleFonts.inter(
-                fontSize: 16.0,
-                color: const Color(0xFF134140),
-              ),
             ),
           ),
         ],

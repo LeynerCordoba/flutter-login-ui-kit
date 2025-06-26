@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import 'main_screen.dart';
 
@@ -56,15 +55,9 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   Widget richText(double fontSize) {
-    return Text.rich(
+    return const Text.rich(
       TextSpan(
-        style: GoogleFonts.inter(
-          fontSize: fontSize,
-          color: const Color(0xFF21899C),
-          letterSpacing: 3,
-          height: 1.03,
-        ),
-        children: const [
+        children: [
           TextSpan(
             text: 'LOGIN ',
             style: TextStyle(

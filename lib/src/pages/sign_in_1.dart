@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../components/social_button.dart';
 
@@ -91,15 +90,9 @@ class SignInOne extends StatelessWidget {
   }
 
   Widget richText(double fontSize) {
-    return Text.rich(
+    return const Text.rich(
       TextSpan(
-        style: GoogleFonts.inter(
-          fontSize: fontSize,
-          color: const Color(0xFF21899C),
-          letterSpacing: 3,
-          height: 1.03,
-        ),
-        children: const [
+        children: [
           TextSpan(
             text: 'LOGIN ',
             style: TextStyle(
@@ -137,20 +130,11 @@ class SignInOne extends StatelessWidget {
           color: const Color(0xFFEFEFEF),
         ),
       ),
-      child: TextField(
-        style: GoogleFonts.inter(
-          fontSize: 16.0,
-          color: const Color(0xFF15224F),
-        ),
+      child: const TextField(
         maxLines: 1,
-        cursorColor: const Color(0xFF15224F),
+        cursorColor: Color(0xFF15224F),
         decoration: InputDecoration(
-            labelText: 'Email/ Phone number',
-            labelStyle: GoogleFonts.inter(
-              fontSize: 12.0,
-              color: const Color(0xFF969AA8),
-            ),
-            border: InputBorder.none),
+            labelText: 'Email/ Phone number', border: InputBorder.none),
       ),
     );
   }
@@ -167,22 +151,13 @@ class SignInOne extends StatelessWidget {
           color: const Color(0xFFEFEFEF),
         ),
       ),
-      child: TextField(
-        style: GoogleFonts.inter(
-          fontSize: 16.0,
-          color: const Color(0xFF15224F),
-        ),
+      child: const TextField(
         maxLines: 1,
         obscureText: true,
         keyboardType: TextInputType.visiblePassword,
-        cursorColor: const Color(0xFF15224F),
-        decoration: InputDecoration(
-            labelText: 'Password',
-            labelStyle: GoogleFonts.inter(
-              fontSize: 12.0,
-              color: const Color(0xFF969AA8),
-            ),
-            border: InputBorder.none),
+        cursorColor: Color(0xFF15224F),
+        decoration:
+            InputDecoration(labelText: 'Password', border: InputBorder.none),
       ),
     );
   }
@@ -202,53 +177,39 @@ class SignInOne extends StatelessWidget {
           ),
         ],
       ),
-      child: Text(
+      child: const Text(
         'Sign in',
-        style: GoogleFonts.inter(
-          fontSize: 16.0,
-          color: Colors.white,
-          fontWeight: FontWeight.w600,
-          height: 1.5,
-        ),
         textAlign: TextAlign.center,
       ),
     );
   }
 
   Widget signInWithText() {
-    return Row(
+    return const Row(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        const Expanded(child: Divider()),
-        const SizedBox(
+        Expanded(child: Divider()),
+        SizedBox(
           width: 16,
         ),
         Text(
           'Or Sign in with',
-          style: GoogleFonts.inter(
-            fontSize: 12.0,
-            color: const Color(0xFF969AA8),
-          ),
           textAlign: TextAlign.center,
         ),
-        const SizedBox(
+        SizedBox(
           width: 16,
         ),
-        const Expanded(child: Divider()),
+        Expanded(child: Divider()),
       ],
     );
   }
 
   //sign up text here
   Widget footerText() {
-    return Text.rich(
+    return const Text.rich(
       TextSpan(
-        style: GoogleFonts.inter(
-          fontSize: 12.0,
-          color: const Color(0xFF3B4C68),
-        ),
-        children: const [
+        children: [
           TextSpan(
             text: 'Don’t have an account ?',
           ),
